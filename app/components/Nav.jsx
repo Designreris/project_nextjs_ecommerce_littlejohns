@@ -14,39 +14,62 @@ export default function Nav() {
 
   return (
     <nav className="flex justify-center items-center h-16 w-full p-4 bg-clr_primary">
-      <h1 className="text-clr_dark font-bold text-2xl mr-auto font-robotoSlab">
+      <h1 className="text-clr_dark font-bold text-3xl mr-auto font-robotoSlab">
         Little John's
       </h1>
-      <button type="button" onClick={() => handleMenuBtn()}>
+      <button
+        type="button"
+        onClick={() => handleMenuBtn()}
+        className="[&>svg]:size-8 [&>svg]:w-auto"
+      >
         <IoMenu />
       </button>
-      <div className={`${navMenu === false ? "hidden" : "flex"} absolute`}>
+      {/* Nav Menu */}
+      <div
+        className={`${
+          navMenu === false ? "hidden" : "flex"
+        } absolute top-16 flex flex-col items-start justify-start bg-clr_light`}
+      >
         <Image
           src={
-            "https://images.pexels.com/photos/11122354/pexels-photo-11122354.jpeg"
+            "https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg"
           }
           width={400}
           height={400}
-          alt={"City background by Kate Branch, Pexels.com"}
+          alt={"City background by Pixabay, Pexels.com"}
+          aria-description="A modern city landscape in day-time as photographed from the water surrounding it."
+          className="object-cover object-center w-screen h-32"
         />
-        <ul>
+        <ul className="text-clr_secondary p-4 [&>li]:mb-4 text-lg">
           <li>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/"} onClick={() => handleMenuBtn()}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link href={"/"}>Track Your Order</Link>
+            <Link href={"/"} onClick={() => handleMenuBtn()}>
+              Track Your Order
+            </Link>
           </li>
           <li>
-            <Link href={"/"}>Our Restaurants</Link>
+            <Link href={"/"} onClick={() => handleMenuBtn()}>
+              Our Restaurants
+            </Link>
           </li>
           <li>
-            <Link href={"/"}>Contact Us</Link>
+            <Link href={"/"} onClick={() => handleMenuBtn()}>
+              Contact Us
+            </Link>
           </li>
           <li>
-            <Link href={"/"}>Sign In</Link>
+            <Link href={"/"} onClick={() => handleMenuBtn()}>
+              Sign In
+            </Link>
           </li>
           <li>
-            <Link href={"/"}>Register</Link>
+            <Link href={"/"} onClick={() => handleMenuBtn()}>
+              Register
+            </Link>
           </li>
         </ul>
       </div>
