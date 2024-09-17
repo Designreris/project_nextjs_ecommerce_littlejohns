@@ -14,7 +14,7 @@ export default function Nav() {
 
   return (
     <nav className="flex justify-center items-center h-16 w-full p-4 bg-clr_primary">
-      <h1 className="text-clr_dark font-bold text-2xl mr-auto">
+      <h1 className="text-clr_dark font-bold text-2xl mr-auto font-robotoSlab">
         Little John's
       </h1>
       <button type="button" onClick={() => handleMenuBtn()}>
