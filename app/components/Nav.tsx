@@ -14,7 +14,7 @@ export default function Nav() {
 
   return (
     <nav className="flex justify-center items-center h-16 w-full p-4 bg-clr_primary">
-      <h1 className="text-clr_dark font-bold text-3xl mr-auto font-robotoSlab">
+      <h1 className="text-clr_dark font-bold text-3xl mr-auto font-robotoSlab z-40">
         Little John's
       </h1>
       <button

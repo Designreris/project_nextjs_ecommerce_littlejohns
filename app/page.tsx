@@ -1,3 +1,9 @@
+import ImgCarousel from "./components/ImgCarousel"
+
 export default function Home() {
-  return <div>Home</div>
+  return (
+    <main>
+      <ImgCarousel />
+    </main>
+  )
 }
