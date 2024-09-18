@@ -7,6 +7,12 @@ module.exports = {
         port: "",
         pathname: "/photos/**",
       },
+      {
+        protocol: "https",
+        hostname: "order.mybigjohns.com",
+        port: "",
+        pathname: "/UserFiles/**",
+      },
     ],
   },
 }

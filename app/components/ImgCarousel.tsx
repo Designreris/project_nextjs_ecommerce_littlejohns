@@ -25,33 +25,33 @@ export default function ImgCarousel() {
           <CarouselItem>
             <Image
               src={
-                "https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg"
+                "https://order.mybigjohns.com/UserFiles/Carousel/carouseldrivethru2.jpg"
               }
               height={400}
               width={400}
-              alt="Pizza - Created by Pixabay, Pexels"
+              alt=""
               className="w-full object-cover object-center lg:h-screen"
             />
           </CarouselItem>
           <CarouselItem>
             <Image
               src={
-                "https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg"
+                "https://order.mybigjohns.com/UserFiles/Carousel/carousel20pizza2.jpg"
               }
               height={400}
               width={400}
-              alt="Fast food - Created by Norma Mortenson, Pexels"
+              alt=""
               className="w-full object-cover object-center lg:h-screen"
             />
           </CarouselItem>
           <CarouselItem>
             <Image
               src={
-                "https://images.pexels.com/photos/4393665/pexels-photo-4393665.jpeg"
+                "https://order.mybigjohns.com/UserFiles/Carousel/carouselapp2.jpg"
               }
               height={400}
               width={400}
-              alt="Fast food - Created by Norma Mortenson, Pexels"
+              alt=""
               className="w-full object-cover object-center lg:h-screen"
             />
           </CarouselItem>

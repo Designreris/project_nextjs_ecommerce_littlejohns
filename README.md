@@ -48,3 +48,4 @@ This app will be able to handle multiple users with secure account creation and 
 ## Todo
 
 - Build StoreFinderPage & link StoreFinder to StoreFinder Page via StoreFinder component.
+- Layout of Carousel images and Promo images...
