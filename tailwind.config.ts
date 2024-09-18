@@ -51,11 +51,7 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
+
       fontFamily: {
         robotoSlab: ["var(--font-robotoSlab)"],
       },
@@ -64,8 +60,10 @@ const config: Config = {
       clr_primary: "#0AA77D",
       clr_secondary: "#144937",
       clr_accent: "#3a5336",
-      clr_light: "#eeeeee",
-      clr_dark: "#111111",
+      clr_light: "#ffffff",
+      clr_dark: "#000000",
+      clr_card: "#EA4E4E",
+      clr_greyed: "rgba(255,255,255,0.5)",
     },
   },
   plugins: [require("tailwindcss-animate")],

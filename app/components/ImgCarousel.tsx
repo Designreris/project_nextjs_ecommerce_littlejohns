@@ -14,7 +14,6 @@ export default function ImgCarousel() {
         plugins={[
           Autoplay({
             delay: 3000,
-            stopOnMouseEnter: true,
           }),
         ]}
         opts={{
@@ -31,7 +30,7 @@ export default function ImgCarousel() {
               height={400}
               width={400}
               alt="Pizza - Created by Pixabay, Pexels"
-              className="w-full object-cover lg:h-screen"
+              className="w-full object-cover object-center lg:h-screen"
             />
           </CarouselItem>
           <CarouselItem>
@@ -42,7 +41,7 @@ export default function ImgCarousel() {
               height={400}
               width={400}
               alt="Fast food - Created by Norma Mortenson, Pexels"
-              className="w-full object-cover  lg:h-screen"
+              className="w-full object-cover object-center lg:h-screen"
             />
           </CarouselItem>
           <CarouselItem>
@@ -53,7 +52,7 @@ export default function ImgCarousel() {
               height={400}
               width={400}
               alt="Fast food - Created by Norma Mortenson, Pexels"
-              className="w-full object-cover  lg:h-screen"
+              className="w-full object-cover object-center lg:h-screen"
             />
           </CarouselItem>
         </CarouselContent>
