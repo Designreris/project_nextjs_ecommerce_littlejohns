@@ -18,14 +18,14 @@ export default function CardPromo() {
           height={400}
           width={400}
           alt="Promo - best pizza ,BigJohns"
-          className="col-span-1 sm:col-span-2 sm:w-full aspect-square sm:aspect-auto"
+          className="col-span-1 sm:col-span-2 sm:w-full h-auto aspect-square sm:aspect-auto"
         />
         <Image
           src={"https://order.mybigjohns.com/UserFiles/Images/byopizzahero.jpg"}
           height={400}
           width={400}
           alt="Promo - build your own pizza ,BigJohns"
-          className="col-span-1 aspect-square sm:aspect-auto"
+          className="col-span-1 h-auto aspect-square sm:aspect-auto"
         />
         <Image
           src={
@@ -34,7 +34,7 @@ export default function CardPromo() {
           height={400}
           width={400}
           alt="Promo - Crispy chicken legend ,BigJohns"
-          className="col-span-1 aspect-square sm:aspect-auto"
+          className="col-span-1 h-auto aspect-square sm:aspect-auto"
         />
       </div>
     </section>

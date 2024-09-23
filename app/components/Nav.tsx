@@ -15,7 +15,7 @@ export default function Nav() {
   return (
     <nav className="flex justify-center items-center h-16 w-full p-4 bg-clr_primary">
       <h1 className="text-clr_dark font-bold text-3xl mr-auto font-robotoSlab z-40">
-        Little John's
+        <Link href={"/"}>Little John's</Link>
       </h1>
       <button
         type="button"
@@ -62,12 +62,12 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link href={"/"} onClick={() => handleMenuBtn()}>
+            <Link href={"/login"} onClick={() => handleMenuBtn()}>
               Sign In
             </Link>
           </li>
           <li>
-            <Link href={"/"} onClick={() => handleMenuBtn()}>
+            <Link href={"/register"} onClick={() => handleMenuBtn()}>
               Register
             </Link>
           </li>

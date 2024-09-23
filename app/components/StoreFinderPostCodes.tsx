@@ -11,7 +11,7 @@ export default function StoreFinderPostCodes() {
       <div
         className={`${
           formFocus === false ? "hidden" : "flex"
-        } absolute flex-col justify-start items-center pt-[10svh] inset-0 z-40 bg-clr_accent opacity-90`}
+        } fixed flex-col justify-start items-center pt-[10svh] inset-0 z-40 bg-clr_accent opacity-90`}
       >
         <h2 className="font-robotoSlab text-4xl font-bold">Find your store</h2>
         <p className="text-sm mt-8 text-balance text-center">
@@ -20,7 +20,7 @@ export default function StoreFinderPostCodes() {
         <button
           type="button"
           onClick={() => setFormFocus(false)}
-          className="flex items-center justify-center text-2xl mt-28 font-semibold [&>svg]:size-10"
+          className="fixed flex items-center justify-center text-2xl bottom-16 font-semibold [&>svg]:size-10"
         >
           <IoClose />
           No Thanks
@@ -33,13 +33,13 @@ export default function StoreFinderPostCodes() {
           required
           onClickCapture={() => setFormFocus(true)}
           className={`${
-            formFocus === true ? "z-50" : ""
+            formFocus === true ? "z-50 fixed top-1/2 -translate-x-[65%]" : ""
           } w-32 p-2 rounded text-clr_dark bg-clr_light`}
         />
         <button
           type="submit"
           className={`${
-            formFocus === true ? "z-50" : ""
+            formFocus === true ? "fixed z-50 top-1/2 translate-x-[45%]" : ""
           } flex flex-row text-nowrap justify-center items-center bg-clr_primary p-2 ml-2 rounded`}
         >
           <FaMapPin />

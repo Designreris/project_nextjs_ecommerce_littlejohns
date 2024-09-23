@@ -64,6 +64,7 @@ const config: Config = {
       clr_dark: "#000000",
       clr_card: "#EA4E4E",
       clr_greyed: "rgba(255,255,255,0.5)",
+      clr_background: "#fdc533",
     },
   },
   plugins: [require("tailwindcss-animate")],
