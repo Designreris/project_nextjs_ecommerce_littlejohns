@@ -10,7 +10,7 @@ export default function CardPromo() {
         alt="Background cardboard picture by icon0com, Pexels"
         className="absolute top-0 h-full w-full -z-30 object-fill"
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-1 p-2 [&>img]:w-full [&>img]:object-cover">
+      <div className="grid grid-cols-1 sm:grid-cols-2 p-2 gap-2 [&>img]:object-cover">
         <Image
           src={
             "https://order.mybigjohns.com/UserFiles/Carousel/BJbestpizzabrum.jpg"
@@ -18,7 +18,7 @@ export default function CardPromo() {
           height={400}
           width={400}
           alt="Promo - best pizza ,BigJohns"
-          className="col-span-2 aspect-square sm:aspect-auto"
+          className="col-span-1 sm:col-span-2 sm:w-full aspect-square sm:aspect-auto"
         />
         <Image
           src={"https://order.mybigjohns.com/UserFiles/Images/byopizzahero.jpg"}

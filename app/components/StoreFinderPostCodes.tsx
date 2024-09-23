@@ -20,7 +20,7 @@ export default function StoreFinderPostCodes() {
         <button
           type="button"
           onClick={() => setFormFocus(false)}
-          className="flex items-center justify-center text-2xl mt-16 font-semibold [&>svg]:size-10"
+          className="flex items-center justify-center text-2xl mt-28 font-semibold [&>svg]:size-10"
         >
           <IoClose />
           No Thanks

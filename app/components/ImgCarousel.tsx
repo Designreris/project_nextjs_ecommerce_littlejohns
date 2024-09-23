@@ -30,7 +30,7 @@ export default function ImgCarousel() {
               height={400}
               width={400}
               alt=""
-              className="w-full object-cover object-center lg:h-screen"
+              className="h-[calc(100svh-6rem)] w-full object-cover"
             />
           </CarouselItem>
           <CarouselItem>
@@ -41,7 +41,7 @@ export default function ImgCarousel() {
               height={400}
               width={400}
               alt=""
-              className="w-full object-cover object-center lg:h-screen"
+              className="h-[calc(100svh-6rem)] w-full object-cover"
             />
           </CarouselItem>
           <CarouselItem>
@@ -52,7 +52,7 @@ export default function ImgCarousel() {
               height={400}
               width={400}
               alt=""
-              className="w-full object-cover object-center lg:h-screen"
+              className="h-[calc(100svh-6rem)] w-full object-cover"
             />
           </CarouselItem>
         </CarouselContent>
