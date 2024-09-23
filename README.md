@@ -57,5 +57,6 @@ This app will be able to handle multiple users with secure account creation and 
 - Build Store Selectors Page.
 - Build notFound Page.
 - Handle errors Page.
+- Conditions Page.
 - Redirects.
 - Link StoreFinder to StoreFinder Page via StoreFinder component.

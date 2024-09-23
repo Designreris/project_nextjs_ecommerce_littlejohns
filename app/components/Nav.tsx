@@ -13,8 +13,8 @@ export default function Nav() {
   }
 
   return (
-    <nav className="flex justify-center items-center h-16 w-full p-4 bg-clr_primary">
-      <h1 className="text-clr_dark font-bold text-3xl mr-auto font-robotoSlab z-40">
+    <nav className="flex justify-center items-center h-16 w-full p-4 bg-clr_primary z-50">
+      <h1 className="text-clr_dark font-bold text-3xl mr-auto font-robotoSlab">
         <Link href={"/"}>Little John's</Link>
       </h1>
       <button
@@ -28,7 +28,7 @@ export default function Nav() {
       <div
         className={`${
           navMenu === false ? "hidden" : "flex"
-        } absolute top-16 flex flex-col items-start justify-start bg-clr_light`}
+        } absolute top-16 flex flex-col items-start justify-start bg-clr_light z-40`}
       >
         <Image
           src={
