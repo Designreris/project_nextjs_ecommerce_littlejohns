@@ -43,8 +43,16 @@ This app will be able to handle multiple users with secure account creation and 
 ## Method
 
 1.  Installed Next.js with Tailwind & TypeScript. I installed React-Icons for the sites various icons & component library Shadcn for user interactivity.
-2.  TODO
+2.  Used Shadcn for main page carousel, added hardcoded pages for Main, SignIn/Register, Account, Order Page, Menu, Store Selectors, etc...
 
 ## Todo
 
-- Build StoreFinderPage & link StoreFinder to StoreFinder Page via StoreFinder component.
+- ~~Build Carousel, link BigJohns images.~~
+- ~~Build Store Finder form component.~~
+- ~~Build Promo images component.~~
+- Build SignIn/Register Page Template.
+- Build Account Page.
+- Build Order/Checkout Page.
+- Build Menu Page.
+- Build Store Selectors Page.
+- Link StoreFinder to StoreFinder Page via StoreFinder component.
