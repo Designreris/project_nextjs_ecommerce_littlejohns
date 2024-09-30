@@ -7,6 +7,18 @@ import { IoMenu } from "react-icons/io5"
 
 export default function Nav() {
   const [navMenu, setNavMenu] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const navData = [
+    { key: 1, link: "/", name: "Home", logEvent: null },
+    { key: 2, link: "/", name: "Track Your Order", logEvent: null },
+    { key: 3, link: "/", name: "Our Restaurants", logEvent: null },
+    { key: 4, link: "/", name: "Contact Us", logEvent: null },
+    { key: 5, link: "/", name: "Sign In", logEvent: false },
+    { key: 6, link: "/", name: "Register", logEvent: false },
+    { key: 7, link: "/", name: "Logout", logEvent: true },
+    { key: 8, link: "/", name: "My Account", logEvent: true },
+  ]
 
   const handleMenuBtn = () => {
     navMenu === false ? setNavMenu(true) : setNavMenu(false)
@@ -41,36 +53,26 @@ export default function Nav() {
           className="object-cover object-center w-screen h-32"
         />
         <ul className="text-clr_secondary p-4 [&>li]:mb-4 text-lg">
-          <li>
-            <Link href={"/"} onClick={() => handleMenuBtn()}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href={"/"} onClick={() => handleMenuBtn()}>
-              Track Your Order
-            </Link>
-          </li>
-          <li>
-            <Link href={"/"} onClick={() => handleMenuBtn()}>
-              Our Restaurants
-            </Link>
-          </li>
-          <li>
-            <Link href={"/"} onClick={() => handleMenuBtn()}>
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link href={"/login"} onClick={() => handleMenuBtn()}>
-              Sign In
-            </Link>
-          </li>
-          <li>
-            <Link href={"/register"} onClick={() => handleMenuBtn()}>
-              Register
-            </Link>
-          </li>
+          {navData.map((item) => {
+            return (
+              <li
+                key={item.key}
+                className={`${
+                  isLoggedIn === false && item.logEvent === true && "hidden"
+                } ${
+                  isLoggedIn === true && item.logEvent === false && "hidden"
+                }`}
+              >
+                <Link
+                  href={item.link}
+                  onClick={() => handleMenuBtn()}
+                  className="hover:text-clr_background"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </nav>

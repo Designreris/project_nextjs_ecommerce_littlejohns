@@ -50,7 +50,7 @@ This app will be able to handle multiple users with secure account creation and 
 - ~~Build Carousel, link BigJohns images.~~
 - ~~Build Store Finder form component.~~
 - ~~Build Promo images component.~~
-- Build SignIn/Register Page Template.
+- ~~Build SignIn/Register Page Template.~~
 - Build Account Page.
 - Build Order/Checkout Page.
 - Build Menu Page.

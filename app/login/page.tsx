@@ -1,6 +1,11 @@
 import Link from "next/link"
-import { FaAngleRight, FaCheck, FaUserCircle, FaUserEdit } from "react-icons/fa"
-import { FaLock } from "react-icons/fa6"
+import {
+  FaAngleRight,
+  FaCheck,
+  FaLock,
+  FaUserCircle,
+  FaUserEdit,
+} from "react-icons/fa"
 
 export default function loginPage() {
   return (
