@@ -68,6 +68,6 @@ const config: Config = {
       clr_background: "#fdc533",
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],
 }
 export default config

@@ -11,7 +11,7 @@ export default function AccountLinks() {
   ]
 
   return (
-    <section>
+    <section className="mt-2 mb-2">
       <ul className="grid grid-cols-2 gap-4">
         {linkData.map((item) => {
           return (
