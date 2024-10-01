@@ -11,14 +11,14 @@ export default function AccountLinks() {
   ]
 
   return (
-    <section className="mt-2 mb-2">
+    <section className="w-full mt-2 mb-2 sm:max-w-[768px] 2xl:hidden">
       <ul className="grid grid-cols-2 gap-4">
         {linkData.map((item) => {
           return (
             <li key={item.key} className="flex items-center justify-center">
               <Link
                 href={item.link}
-                className="bg-clr_primary p-2 rounded text-center text-sm font-medium grow h-full hover:bg-clr_secondary"
+                className="bg-clr_primary p-2 rounded text-center text-sm font-medium grow h-full hover:bg-clr_secondary flex items-center justify-center"
               >
                 {item.name}
               </Link>

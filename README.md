@@ -60,3 +60,4 @@ This app will be able to handle multiple users with secure account creation and 
 - Conditions Page.
 - Redirects.
 - Link StoreFinder to StoreFinder Page via StoreFinder component.
+- Handle Account Actions (CRUD).

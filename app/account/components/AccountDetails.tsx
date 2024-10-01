@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
-import { FaThumbsUp, FaCircleInfo } from "react-icons/fa6"
+import { FaCircleInfo } from "react-icons/fa6"
+import { FaThumbsUp } from "react-icons/fa"
 import { IoClose } from "react-icons/io5"
 
 export default function AccountDetails() {
@@ -12,7 +13,7 @@ export default function AccountDetails() {
   return (
     <section
       id="details"
-      className="bg-clr_light p-4 mt-2 mb-2 rounded flex flex-col items-center justify-center"
+      className="bg-clr_light w-full p-4 mt-2 mb-2 rounded flex flex-col items-center justify-center  sm:max-w-[768px]"
     >
       <h1 className="text-clr_secondary text-2xl font-robotoSlab mt-2 mb-4">
         Your Details
