@@ -14,10 +14,10 @@ export default function Nav() {
     { key: 2, link: "/", name: "Track Your Order", logEvent: null },
     { key: 3, link: "/", name: "Our Restaurants", logEvent: null },
     { key: 4, link: "/", name: "Contact Us", logEvent: null },
-    { key: 5, link: "/", name: "Sign In", logEvent: false },
-    { key: 6, link: "/", name: "Register", logEvent: false },
+    { key: 5, link: "/login", name: "Sign In", logEvent: false },
+    { key: 6, link: "/register", name: "Register", logEvent: false },
     { key: 7, link: "/", name: "Logout", logEvent: true },
-    { key: 8, link: "/", name: "My Account", logEvent: true },
+    { key: 8, link: "/account", name: "My Account", logEvent: true },
   ]
 
   const handleMenuBtn = () => {

@@ -1,13 +1,9 @@
 "use client"
 
-import { FaPlus } from "react-icons/fa"
 import AddressAccordion from "./AddressAccordion"
-import { useState } from "react"
 import AddressDialog from "./AddressDialog"
 
 export default function AccountAddress() {
-  const [addressForm, setAddressForm] = useState(false)
-
   const addressData = [
     {
       id: "340c7f0kl2j9",

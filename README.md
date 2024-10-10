@@ -51,13 +51,13 @@ This app will be able to handle multiple users with secure account creation and 
 - ~~Build Store Finder form component.~~
 - ~~Build Promo images component.~~
 - ~~Build SignIn/Register Page Template.~~
-- Build Account Page.
+- ~~Build Account Page.~~
+- Build Store Selectors Page.
 - Build Order/Checkout Page.
 - Build Menu Page.
-- Build Store Selectors Page.
-- Build notFound Page.
+- ~~Build notFound Page.~~
 - Handle errors Page.
 - Conditions Page.
 - Redirects.
 - Link StoreFinder to StoreFinder Page via StoreFinder component.
-- Handle Account Actions (CRUD).
+- Handle Account Actions (CRUD), Address, Wallet, choose address, etc...
