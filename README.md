@@ -52,7 +52,8 @@ This app will be able to handle multiple users with secure account creation and 
 - ~~Build Promo images component.~~
 - ~~Build SignIn/Register Page Template.~~
 - ~~Build Account Page.~~
-- Build Store Selectors Page.
+- ~~Build Stores Page.~~
+- ~~Build Store Info Page.~~
 - Build Order/Checkout Page.
 - Build Menu Page.
 - ~~Build notFound Page.~~

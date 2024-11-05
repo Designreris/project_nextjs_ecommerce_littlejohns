@@ -12,7 +12,7 @@ export default function Nav() {
   const navData = [
     { key: 1, link: "/", name: "Home", logEvent: null },
     { key: 2, link: "/", name: "Track Your Order", logEvent: null },
-    { key: 3, link: "/", name: "Our Restaurants", logEvent: null },
+    { key: 3, link: "/stores", name: "Our Restaurants", logEvent: null },
     { key: 4, link: "/", name: "Contact Us", logEvent: null },
     { key: 5, link: "/login", name: "Sign In", logEvent: false },
     { key: 6, link: "/register", name: "Register", logEvent: false },
