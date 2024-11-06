@@ -54,8 +54,8 @@ This app will be able to handle multiple users with secure account creation and 
 - ~~Build Account Page.~~
 - ~~Build Stores Page.~~
 - ~~Build Store Info Page.~~
-- Build Order/Checkout Page.
 - Build Menu Page.
+- Build Order/Checkout Page.
 - ~~Build notFound Page.~~
 - Handle errors Page.
 - Conditions Page.

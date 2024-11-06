@@ -32,7 +32,7 @@ export default function Nav() {
       <button
         type="button"
         onClick={() => handleMenuBtn()}
-        className="[&>svg]:size-8 [&>svg]:w-auto"
+        className="[&>svg]:size-8 [&>svg]:w-auto hover:text-clr_background"
       >
         <IoMenu />
       </button>
