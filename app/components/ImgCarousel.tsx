@@ -26,8 +26,7 @@ export default function ImgCarousel() {
           <CarouselItem>
             <Image
               src={
-                "https://order.mybigjohns.com/UserFiles/Carousel/carouseldrivethru2.jpg" ||
-                notFound
+                "https://order.mybigjohns.com/UserFiles/Carousel/carouseldrivethru2.jpg"
               }
               height={400}
               width={1300}
@@ -40,8 +39,7 @@ export default function ImgCarousel() {
           <CarouselItem>
             <Image
               src={
-                "https://order.mybigjohns.com/UserFiles/Carousel/artboard%2034%20(2).jpg" ||
-                notFound
+                "https://order.mybigjohns.com/UserFiles/Carousel/artboard%2034%20(2).jpg"
               }
               height={400}
               width={1300}
@@ -53,8 +51,7 @@ export default function ImgCarousel() {
           <CarouselItem>
             <Image
               src={
-                "https://order.mybigjohns.com/UserFiles/Carousel/carouselapp2.jpg" ||
-                notFound
+                "https://order.mybigjohns.com/UserFiles/Carousel/carouselapp2.jpg"
               }
               height={400}
               width={1300}
