@@ -13,6 +13,12 @@ module.exports = {
         port: "",
         pathname: "/UserFiles/**",
       },
+      {
+        protocol: "https",
+        hostname: "bjaquinton.mybigjohns.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 }
