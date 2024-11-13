@@ -42,8 +42,9 @@ This app will be able to handle multiple users with secure account creation and 
 
 ## Method
 
-1.  Installed Next.js with Tailwind & TypeScript. I installed React-Icons for the sites various icons & component library Shadcn for user interactivity.
+1.  Installed Next.js with Tailwind & TypeScript. Installed React-Icons for the sites various icons & component library Shadcn for user interactivity.
 2.  Used Shadcn for main page carousel, added hardcoded pages for Main, SignIn/Register, Account, Order Page, Menu, Store Selectors, etc...
+3.  Decided to use Vercel's Postgres and Prisma ORM to handle DB interactions.
 
 ## Todo
 

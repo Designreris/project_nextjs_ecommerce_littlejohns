@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  // Uses connection pooling
+  url       = env("POSTGRES_PRISMA_URL")
+  // Uses direct connection, ⚠️ make sure to keep this to `POSTGRES_URL_NON_POOLING`
+  // or you'll have dangling databases from migrations
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model User {
+  id              Int              @id @default(autoincrement())
+  email           String           @unique
+  createdAt       DateTime         @default(now())
+  lastLogin       DateTime?        @updatedAt()
+  role            Role             @default(USER)
+  userContactInfo UserContactInfo?
+  orderHistory    OrderHistory[]
+}
+
+model UserContactInfo {
+  id              Int     @id @default(autoincrement())
+  firstName       String
+  lastName        String?
+  addressFirst    String
+  addressCity     String
+  addressPostcode String
+  phoneNumber     String?
+
+  user   User @relation(fields: [userId], references: [id])
+  userId Int  @unique
+}
+
+model Product {
+  id                 Int       @id @default(autoincrement())
+  name               String
+  productDescription String
+  imagePath          String?
+  priceInPence       Int
+  discountInPence    Int?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime? @updatedAt()
+  isPublished        Boolean?
+  isAvailable        Boolean?
+  isFeatured         Boolean?
+  isDiscount         Boolean?
+  isMealDeal         Boolean?
+  isCustomise        Boolean?
+}
+
+model OrderHistory {
+  id                Int       @id @default(autoincrement())
+  totalPriceInPence Int
+  notes             String
+  basket            Json
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime? @updatedAt()
+  status            Status?   @default(PREPARING)
+
+  user   User @relation(fields: [userId], references: [id])
+  userId Int  @unique
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum Status {
+  CANCELLED
+  PREPARING
+  DELIVERING
+  COMPLETED
+}
